@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+<!--    <changeSet id="user-table-create-2" author="Victoria">-->
+<!--        <sql>-->
+<!--            CREATE TABLE IF NOT EXISTS user (-->
+<!--            id BIGINT AUTO_INCREMENT PRIMARY KEY,-->
+<!--            email VARCHAR(255),-->
+<!--            password VARCHAR(255),-->
+<!--            username VARCHAR(20) NOT NULL-->
+<!--            );-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="role-table-create-2" author="Victoria">-->
+<!--        <sql>-->
+<!--            CREATE TABLE IF NOT EXISTS role (-->
+<!--            id SERIAL PRIMARY KEY,-->
+<!--            name VARCHAR(20) NOT NULL-->
+<!--            );-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="user-roles-table-create" author="Victoria">-->
+<!--        <sql>-->
+<!--            CREATE TABLE IF NOT EXISTS user_roles (-->
+<!--            user_id BIGINT NOT NULL,-->
+<!--            role_id INTEGER NOT NULL,-->
+<!--            CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES user(id),-->
+<!--            CONSTRAINT fk_role FOREIGN KEY (role_id) REFERENCES role(id),-->
+<!--            PRIMARY KEY (user_id, role_id)-->
+<!--            );-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="table-role-insert-2" author="Victoria">-->
+<!--        <sql>-->
+<!--            INSERT INTO role (name) VALUES ('ROLE_USER');-->
+<!--            INSERT INTO role (name) VALUES ('ROLE_ADMIN');-->
+<!--            INSERT INTO role (name) VALUES ('ROLE_MODERATOR');-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+<!--    <changeSet id="table-usert-insert-2" author="Victoria">-->
+<!--        <sql>-->
+<!--            INSERT INTO user (username, email, password) VALUES ('user', 'user@example.com', 'user');-->
+<!--            INSERT INTO user_roles (user_id, role_id) VALUES (1, 1);-->
+
+<!--&lt;!&ndash;            INSERT INTO user (username, email, password) VALUES ('admin', 'admin@example.com', 'admin');&ndash;&gt;-->
+<!--            INSERT INTO user_roles (user_id, role_id) VALUES (2, 2);-->
+<!--        </sql>-->
+<!--    </changeSet>-->
+</databaseChangeLog>
